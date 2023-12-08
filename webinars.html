@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/330/330439.png" type="image/x-icon">
+    <title>Upcoming Webinars</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .webinar {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .webinar:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        strong {
+            color: #007BFF;
+        }
+
+    
+    /* Inline CSS for styling the button */
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1>Upcoming Webinars</h1>
+
+    <div class="webinar">
+        <h2>Mission Karmayogi</h2>
+        <p><strong>Date:</strong> December 15, 2023</p>
+        <p><strong>Time:</strong> 2:00 PM - 3:30 PM</p>
+        <p><strong>Description:</strong> It involves extensive training and capacity building for civil servants, a competency-based talent management system, and promoting a culture of innovation and excellence in governance.</p>
+        <button onclick="redirectToGoogleMeet()">Go to Google Meet</button>
+    </div>
+
+    <div class="webinar">
+        <h2>National Green Hydrogen Mission</h2>
+        <p><strong>Date:</strong> January 1, 2024</p>
+        <p><strong>Time:</strong> 3:30 PM - 5:00 PM</p>
+        <p><strong>Description:</strong> It incentivizes investments in green hydrogen technologies, infrastructure development, and research and development. The goal is to achieve 5 million metric tons of green hydrogen production by 2030.</p>
+        <button onclick="redirectToGoogleMeet()">Go to Google Meet</button>
+    </div>
+
+    <div class="webinar">
+        <h2>One Nation, One Ration Card</h2>
+        <p><strong>Date:</strong> January 10, 2024</p>
+        <p><strong>Time:</strong> 5:30 PM - 7:00 PM</p>
+        <p><strong>Description:</strong>This initiative aims to provide seamless access to subsidized food grains to all eligible beneficiaries across the country.</p>
+        <button onclick="redirectToGoogleMeet()">Go to Google Meet</button>
+    </div>
+
+    <div class="webinar">
+        <h2>Credit Guarantee Scheme for Micro and Small Enterprises</h2>
+        <p><strong>Date:</strong> January 10, 2024</p>
+        <p><strong>Time:</strong> 3:30 PM - 5:00 PM</p>
+        <p><strong>Description:</strong> The government increased the loan guarantee coverage and reduced processing fees, easing access to capital for these crucial drivers of the Indian economy.</p>
+        <button onclick="redirectToGoogleMeet()">Go to Google Meet</button>
+    </div>
+    
+
+</body>
+<script>
+    // JavaScript function to redirect to Google Meet
+    function redirectToGoogleMeet() {
+      // Replace 'YOUR_GOOGLE_MEET_URL' with the actual Google Meet URL you want to redirect to
+      window.location.href = 'https://meet.google.com/';
+    }
+  </script>
+</html>

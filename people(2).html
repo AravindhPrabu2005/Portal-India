@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/330/330439.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <title>Suggestion Forum - Portal India</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        #comments-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #comment-input-container {
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div id="comments-container">
+    <h2>People's Forum</h2>
+    <div id="comments-list"></div>
+</div>
+
+<div id="comment-input-container">
+    <textarea id="comment-input" placeholder="Add your opinion..."></textarea>
+    <button onclick="addComment()">Add Opinion</button>
+</div>
+
+<script>
+    function addComment() {
+        var commentInput = document.getElementById("comment-input");
+        var commentText = commentInput.value.trim();
+
+        if (commentText !== "") {
+            var commentsList = document.getElementById("comments-list");
+
+            var commentDiv = document.createElement("div");
+            commentDiv.className = "comment";
+            commentDiv.textContent = commentText;
+
+            commentsList.appendChild(commentDiv);
+
+            // Clear the input field after adding the comment
+            commentInput.value = "";
+        }
+    }
+</script>
+
+</body>
+</html>

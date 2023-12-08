@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/330/330439.png" type="image/x-icon">
+  <title>Polls - Portal India</title>
+  <link rel="stylesheet" href="polls.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>what are the social issues that need to be taken in account with respect to the citizens of this country</h1>
+    <div class="poll-area">
+      <input type="radio" name="poll" id="opt-1">
+      <input type="radio" name="poll" id="opt-2">
+      <input type="radio" name="poll" id="opt-3">
+      <input type="radio" name="poll" id="opt-4">
+      <label for="opt-1" class="opt-1">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">Caste system</span>
+          </div>
+          <span class="percent">55%</span>
+        </div>
+        <div class="progress" id="pstyle1" style='--w:55;'></div>
+      </label>
+      <label for="opt-2" class="opt-2">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">Gender discrimnation</span>
+          </div>
+          <span class="percent">20%</span>
+        </div>
+        <div class="progress" id="pstyle2" style='--w:80;'></div>
+      </label>
+      <label for="opt-3" class="opt-3">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">Communalism</span>
+          </div>
+          <span class="percent">20%</span>
+        </div>
+        <div class="progress" id="pstyle3" style='--w:20;'></div>
+      </label>
+      <label for="opt-4" class="opt-4">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">Religion</span>
+          </div>
+          <span class="percent">96%</span>
+        </div>
+        <div class="progress" id="pstyle4" style='--w:96;'></div>
+      </label>
+    </div>
+  </div>
+  
+  <script src="polls.js"></script>
+</body>
+</html>
